@@ -1,6 +1,6 @@
 {
   "name": "@blaze/css",
-  "version": "7.2.1",
+  "version": "8.0.0",
   "description": "Open Source UI Toolkit - CSS",
   "author": "Gregory Pratt",
   "license": "MIT",
@@ -33,7 +33,7 @@
   },
   "files": [
     "src/scss",
-    "dist"
+    "dist/blaze/blaze.css"
   ],
   "scripts": {
     "build": "stencil build",
