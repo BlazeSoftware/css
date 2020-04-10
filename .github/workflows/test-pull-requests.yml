@@ -1,0 +1,19 @@
+name: Test Pull Request
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Install
+        run: npm ci
+
+      - name: Test
+        run: npm test
