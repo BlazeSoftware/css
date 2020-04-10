@@ -19,6 +19,7 @@ When that is complete run:
 ```cli
 $ nvm use
 $ npm i
+$ npm start
 ```
 
 ## Installing the CSS

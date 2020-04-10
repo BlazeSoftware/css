@@ -6,10 +6,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlazeSoftware/blaze.git"
+    "url": "https://github.com/BlazeSoftware/css.git"
   },
   "bugs": {
-    "url": "https://github.com/BlazeSoftware/blaze/issues"
+    "url": "https://github.com/BlazeSoftware/css/issues"
   },
   "homepage": "https://www.blazeui.com",
   "keywords": [
@@ -39,11 +39,12 @@
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
     "test": "stylelint \"src/scss/**/*.scss\"",
+    "stylelint": "stylelint \"src/**/*.scss\" --fix",
     "prettier": "prettier --write './**/*'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier && npm run test && npm run build",
+      "pre-commit": "npm run prettier && npm run stylelint && git add . && npm run test && npm run build",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
