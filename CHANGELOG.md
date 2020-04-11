@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [9.0.1](https://github.com/BlazeSoftware/css/compare/v9.0.0...v9.0.1) (2020-04-11)
+
+### Bug Fixes
+
+- **ci:** remove publish command ([ec19460](https://github.com/BlazeSoftware/css/commit/ec19460d47c30b9b6fc4b949646ad08da81e3db9))
+
 ## 9.0.0 (2020-04-11)
 
 ### ⚠ BREAKING CHANGES
