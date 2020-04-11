@@ -1,7 +1,22 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 9.0.0 (2020-04-11)
+
+### ⚠ BREAKING CHANGES
+
+- **package:** distributed files have changed
+
+### Features
+
+- **ci:** added standard-version ([a50ed4f](https://github.com/BlazeSoftware/css/commit/a50ed4f43c3ab653e5f5b14f3642ebb5e53fb139))
+
+### Bug Fixes
+
+- **ci:** remove build step from commit ([d0fc657](https://github.com/BlazeSoftware/css/commit/d0fc6577fbf444cfb97a1df08c7b5e690bba89ff))
+
+* **package:** change the packaged files ([f96535e](https://github.com/BlazeSoftware/css/commit/f96535ed72784985cc7ca87089932b7d315e866a))
 
 # [7.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.1.2...@blaze/css@7.2.0) (2019-12-06)
 
