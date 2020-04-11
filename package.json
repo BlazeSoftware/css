@@ -41,7 +41,7 @@
     "test": "stylelint \"src/scss/**/*.scss\"",
     "stylelint": "stylelint \"src/**/*.scss\" --fix",
     "prettier": "prettier --write './**/*'",
-    "release": "npm run build && standard-version && npm run publish"
+    "release": "npm run build && standard-version"
   },
   "husky": {
     "hooks": {
