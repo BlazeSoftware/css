@@ -1,3 +1,11 @@
+<a name="9.1.0"></a>
+
+# [9.1.0](https://github.com/BlazeSoftware/css/compare/v9.0.1...v9.1.0) (2020-04-21)
+
+### Bug Fixes
+
+- **root:** added box-sizing and host to root styling closes [#1](https://github.com/BlazeSoftware/css/issues/1) ([5ea0c71](https://github.com/BlazeSoftware/css/commit/5ea0c71))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
