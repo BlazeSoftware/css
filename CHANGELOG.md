@@ -1,3 +1,7 @@
+<a name="9.2.0"></a>
+
+# [9.2.0](https://github.com/BlazeSoftware/css/compare/v9.1.0...v9.2.0) (2020-04-21)
+
 <a name="9.1.0"></a>
 
 # [9.1.0](https://github.com/BlazeSoftware/css/compare/v9.0.1...v9.1.0) (2020-04-21)
