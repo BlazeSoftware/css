@@ -42,6 +42,7 @@
     "test": "stylelint \"src/scss/**/*.scss\"",
     "stylelint": "stylelint \"src/**/*.scss\" --fix",
     "prettier": "prettier --write './**/*'",
+    "prepare": "husky install",
     "preversion": "npm test",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "git push --follow-tags"
