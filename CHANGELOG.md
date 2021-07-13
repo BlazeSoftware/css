@@ -1,3 +1,7 @@
+## [9.2.1](https://github.com/BlazeSoftware/css/compare/v9.2.0...v9.2.1) (2021-07-13)
+
+
+
 <a name="9.2.0"></a>
 
 # [9.2.0](https://github.com/BlazeSoftware/css/compare/v9.1.0...v9.2.0) (2020-04-21)
