@@ -39,31 +39,18 @@
   "scripts": {
     "build": "stencil build",
     "start": "stencil build --dev --watch --serve",
-    "test": "stylelint \"src/scss/**/*.scss\"",
-    "stylelint": "stylelint \"src/**/*.scss\" --fix",
+    "stylelint": "stylelint \"src/scss/**/*.scss\"",
     "prettier": "prettier --write './**/*'",
-    "prepare": "husky install",
-    "preversion": "npm run prettier && npm run stylelint && npm test",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "preversion": "npm run prettier && npm run stylelint",
     "postversion": "git push --follow-tags"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prettier && npm run stylelint && git add . && npm run test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "devDependencies": {
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
     "@stencil/core": "2.6.0",
     "@stencil/postcss": "2.0.0",
     "@stencil/router": "1.0.1",
     "@stencil/sass": "1.4.1",
     "@types/cssnano": "4.0.1",
-    "conventional-changelog-cli": "2.1.1",
     "cssnano": "5.0.6",
-    "husky": "7.0.1",
     "postcss": "8.3.5",
     "prettier": "2.3.2",
     "stylelint": "13.13.1",
