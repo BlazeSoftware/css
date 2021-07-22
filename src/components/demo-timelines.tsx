@@ -7,7 +7,7 @@ export class Timelines {
   render() {
     return (
       <section class="u-window-box-super">
-        <h2 class="c-heading" />
+        <h2 class="c-heading">Timelines</h2>
         <ul class="o-timeline">
           <li class="c-timeline-item">
             <div class="c-timeline-item__body">Nothing</div>

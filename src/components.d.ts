@@ -46,8 +46,6 @@ export namespace Components {
     }
     interface DemoModals {
     }
-    interface DemoNavs {
-    }
     interface DemoOverlays {
     }
     interface DemoPagination {
@@ -196,12 +194,6 @@ declare global {
         prototype: HTMLDemoModalsElement;
         new (): HTMLDemoModalsElement;
     };
-    interface HTMLDemoNavsElement extends Components.DemoNavs, HTMLStencilElement {
-    }
-    var HTMLDemoNavsElement: {
-        prototype: HTMLDemoNavsElement;
-        new (): HTMLDemoNavsElement;
-    };
     interface HTMLDemoOverlaysElement extends Components.DemoOverlays, HTMLStencilElement {
     }
     var HTMLDemoOverlaysElement: {
@@ -301,7 +293,6 @@ declare global {
         "demo-inputs": HTMLDemoInputsElement;
         "demo-menus": HTMLDemoMenusElement;
         "demo-modals": HTMLDemoModalsElement;
-        "demo-navs": HTMLDemoNavsElement;
         "demo-overlays": HTMLDemoOverlaysElement;
         "demo-pagination": HTMLDemoPaginationElement;
         "demo-progress-bars": HTMLDemoProgressBarsElement;
@@ -358,8 +349,6 @@ declare namespace LocalJSX {
     }
     interface DemoModals {
     }
-    interface DemoNavs {
-    }
     interface DemoOverlays {
     }
     interface DemoPagination {
@@ -407,7 +396,6 @@ declare namespace LocalJSX {
         "demo-inputs": DemoInputs;
         "demo-menus": DemoMenus;
         "demo-modals": DemoModals;
-        "demo-navs": DemoNavs;
         "demo-overlays": DemoOverlays;
         "demo-pagination": DemoPagination;
         "demo-progress-bars": DemoProgressBars;
@@ -447,7 +435,6 @@ declare module "@stencil/core" {
             "demo-inputs": LocalJSX.DemoInputs & JSXBase.HTMLAttributes<HTMLDemoInputsElement>;
             "demo-menus": LocalJSX.DemoMenus & JSXBase.HTMLAttributes<HTMLDemoMenusElement>;
             "demo-modals": LocalJSX.DemoModals & JSXBase.HTMLAttributes<HTMLDemoModalsElement>;
-            "demo-navs": LocalJSX.DemoNavs & JSXBase.HTMLAttributes<HTMLDemoNavsElement>;
             "demo-overlays": LocalJSX.DemoOverlays & JSXBase.HTMLAttributes<HTMLDemoOverlaysElement>;
             "demo-pagination": LocalJSX.DemoPagination & JSXBase.HTMLAttributes<HTMLDemoPaginationElement>;
             "demo-progress-bars": LocalJSX.DemoProgressBars & JSXBase.HTMLAttributes<HTMLDemoProgressBarsElement>;

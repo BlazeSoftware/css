@@ -37,7 +37,6 @@ export class Site {
         <demo-pagination />
         <demo-trees />
         <demo-progress-bars />
-        <demo-navs />
         <demo-timelines />
         <demo-dividers />
         <demo-file-upload />
