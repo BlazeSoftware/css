@@ -6,9 +6,9 @@ Blaze CSS is a set of CSS styles and HTML components available as CSS and SCSS.
 
 ## Ready to Code Dev Environment
 
-Contribute to Blaze using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
+Contribute to Blaze using an online development environment.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlazeSoftware/css)
+[![Open in Github Dot](https://img.shields.io/badge/code-open%20in%20github-orange?logo=github&style=for-the-badge)](https://github.dev/BlazeSoftware/css)
 
 ## Local Developer Setup
 
