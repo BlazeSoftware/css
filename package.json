@@ -45,17 +45,17 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "@stencil/core": "2.6.0",
-    "@stencil/postcss": "2.0.0",
+    "@stencil/core": "2.14.0",
+    "@stencil/postcss": "2.1.0",
     "@stencil/router": "1.0.1",
-    "@stencil/sass": "1.4.1",
-    "@types/cssnano": "4.0.1",
-    "cssnano": "5.0.6",
-    "postcss": "8.3.5",
-    "prettier": "2.3.2",
-    "stylelint": "13.13.1",
+    "@stencil/sass": "1.5.2",
+    "@types/cssnano": "5.0.0",
+    "cssnano": "5.0.17",
+    "postcss": "8.4.7",
+    "prettier": "2.5.1",
+    "stylelint": "14.5.3",
     "stylelint-config-rational-order": "0.1.2",
-    "stylelint-config-standard": "22.0.0",
-    "stylelint-scss": "3.19.0"
+    "stylelint-config-standard": "25.0.0",
+    "stylelint-scss": "4.1.0"
   }
 }
