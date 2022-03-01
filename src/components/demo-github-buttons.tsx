@@ -13,14 +13,16 @@ export class GitHubButtons {
             href="https://github.com"
             target="_blank"
             class="c-github-button__link c-github-button__link--button"
-            aria-label="Open on GitHub">
+            aria-label="Open on GitHub"
+          >
             <svg
               version="1.1"
               width="14"
               height="16"
               viewBox="0 0 14 16"
               class="c-github-button__icon c-github-button__icon--star"
-              aria-hidden="true">
+              aria-hidden="true"
+            >
               <path
                 fill-rule="evenodd"
                 d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
@@ -32,7 +34,8 @@ export class GitHubButtons {
             href="https://github.com"
             target="_blank"
             class="c-github-button__link c-github-button__link--count"
-            aria-label="Open on GitHub">
+            aria-label="Open on GitHub"
+          >
             <b />
             <i />
             <span>1,337</span>
@@ -43,14 +46,16 @@ export class GitHubButtons {
             href="https://github.com"
             target="_blank"
             class="c-github-button__link c-github-button__link--button"
-            aria-label="Open on GitHub">
+            aria-label="Open on GitHub"
+          >
             <svg
               version="1.1"
               width="14"
               height="16"
               viewBox="0 0 14 16"
               class="c-github-button__icon c-github-button__icon--star"
-              aria-hidden="true">
+              aria-hidden="true"
+            >
               <path
                 fill-rule="evenodd"
                 d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"
@@ -62,7 +67,8 @@ export class GitHubButtons {
             href="https://github.com"
             target="_blank"
             class="c-github-button__link c-github-button__link--count"
-            aria-label="Open on GitHub">
+            aria-label="Open on GitHub"
+          >
             <b />
             <i />
             <span>1,337</span>

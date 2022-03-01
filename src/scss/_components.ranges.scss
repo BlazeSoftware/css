@@ -22,7 +22,7 @@
 @mixin range-thumb {
   width: 20px;
   height: 20px;
-  margin: -5px 0 0 0;
+  margin: -5px 0 0;
   background-color: #fff;
   border: 0;
   border-radius: var(--border-radius-rounded);
@@ -35,7 +35,7 @@
 }
 
 @mixin range-thumb-webkit {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 @mixin range-thumb-active {
@@ -53,7 +53,7 @@
   width: 100%;
   padding: var(--spacing-small) 0;
   outline: 0;
-  -webkit-appearance: none;
+  appearance: none;
 
   &.c-range--brand {
     --range-track-color: var(--color-brand);

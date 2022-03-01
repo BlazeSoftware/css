@@ -6,7 +6,6 @@ $screen-limits: (
   xlarge: 78em,
   super: 116em,
 );
-
 $screen-adjustment: 0.01 !default;
 
 @mixin screen-and-up($size) {
@@ -40,7 +39,7 @@ $screen-adjustment: 0.01 !default;
 }
 
 @mixin screen--xlarge-only {
-  @media (min-width: #{map-get($screen-limits, large)}) and (max-width: #{map-get($screen-limits, xlarge)  - $screen-adjustment}) {
+  @media (min-width: #{map-get($screen-limits, large)}) and (max-width: #{map-get($screen-limits, xlarge) - $screen-adjustment}) {
     @content;
   }
 }

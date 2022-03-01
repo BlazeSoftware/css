@@ -135,7 +135,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '15%' }}
-            class="c-progress__bar">
+            class="c-progress__bar"
+          >
             15% complete
           </div>
         </div>
@@ -148,7 +149,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '20%' }}
-            class="c-progress__bar c-progress__bar--brand">
+            class="c-progress__bar c-progress__bar--brand"
+          >
             20% complete
           </div>
         </div>
@@ -161,7 +163,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '35%' }}
-            class="c-progress__bar c-progress__bar--info">
+            class="c-progress__bar c-progress__bar--info"
+          >
             35% complete
           </div>
         </div>
@@ -174,7 +177,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '45%' }}
-            class="c-progress__bar c-progress__bar--warning">
+            class="c-progress__bar c-progress__bar--warning"
+          >
             45% complete
           </div>
         </div>
@@ -187,7 +191,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '60%' }}
-            class="c-progress__bar c-progress__bar--success">
+            class="c-progress__bar c-progress__bar--success"
+          >
             60% complete
           </div>
         </div>
@@ -200,7 +205,8 @@ export class ProgressBars {
             aria-valuemin="0"
             aria-valuemax="100"
             style={{ width: '100%' }}
-            class="c-progress__bar c-progress__bar--error">
+            class="c-progress__bar c-progress__bar--error"
+          >
             100% complete
           </div>
         </div>
