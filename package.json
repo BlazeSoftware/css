@@ -41,7 +41,7 @@
     "start": "stencil build --dev --watch --serve",
     "stylelint": "stylelint \"src/scss/**/*.scss\"",
     "prettier": "prettier --write './**/*'",
-    "preversion": "npm run prettier && npm run stylelint",
+    "preversion": "npm run prettier && npm run stylelint && npm run build",
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
