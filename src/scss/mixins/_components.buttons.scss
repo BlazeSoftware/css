@@ -9,7 +9,7 @@
     filter: brightness(0.95);
   }
 
-  &:not(:disabled):not([disabled]) {
+  &:not(:disabled, [disabled]) {
     &:not(:active) {
       &:hover {
         filter: brightness(0.95);
@@ -38,7 +38,7 @@
     border-color: 1px solid transparent;
   }
 
-  &:not(:disabled):not([disabled]) {
+  &:not(:disabled, [disabled]) {
     &:not(:active) {
       &:hover {
         color: #fff;
@@ -103,7 +103,7 @@
   -webkit-appearance: none;
   appearance: none;
 
-  &:not(:disabled):not([disabled]) {
+  &:not(:disabled, [disabled]) {
     &:active {
       background-color: transparent;
     }

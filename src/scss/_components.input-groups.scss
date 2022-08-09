@@ -129,7 +129,7 @@
       border-left-width: var(--border-width);
     }
 
-    &:not(:first-child):not(:last-child) {
+    &:not(:first-child, :last-child) {
       border-radius: 0;
     }
 
@@ -148,7 +148,7 @@
       border-left-width: var(--border-width);
     }
 
-    &:not(:first-child):not(:last-child) .c-field {
+    &:not(:first-child, :last-child) .c-field {
       border-left-width: var(--border-width);
       border-radius: 0;
     }
