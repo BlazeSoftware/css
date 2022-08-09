@@ -35,7 +35,7 @@ export class Drawers {
           <div aria-hidden class="c-overlay c-overlay--visible" />
           <aside class="o-drawer u-highest o-drawer--left o-drawer--visible">
             <div class="c-card">
-              <img class="o-image" src="http://via.placeholder.com/1024x963/3B6DC6/FFF" />
+              <img class="o-image" src="//source.unsplash.com/random" />
               <header class="c-card__header">
                 <h2 class="c-heading">
                   Heading

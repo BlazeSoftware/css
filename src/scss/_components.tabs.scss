@@ -33,7 +33,7 @@
   border-bottom: var(--spacing-xsmall) solid var(--color-background);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 
-  &:not(:disabled):not(.c-tab-heading--active):hover {
+  &:not(:disabled, .c-tab-heading--active):hover {
     border-bottom-color: var(--tab-heading-border-color);
   }
 

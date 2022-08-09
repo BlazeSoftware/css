@@ -35,7 +35,7 @@ export class Cards {
         <div class="c-card">
           <div class="c-card__item c-card__item--info o-media">
             <div class="o-media__image">
-              <img class="o-image" src="//via.placeholder.com/80" />
+              <img class="o-image" src="//source.unsplash.com/random" />
             </div>
             <div class="o-media__body">
               <h2 class="c-heading">
@@ -157,7 +157,7 @@ export class Cards {
           <div class="c-card__item">Item 8</div>
         </div>
         <div class="c-card u-highest">
-          <img class="o-image" src="http://via.placeholder.com/1024x963/3B6DC6/FFF" />
+          <img class="o-image" src="//source.unsplash.com/random" />
           <header class="c-card__header">
             <h2 class="c-heading">
               Heading
@@ -176,7 +176,7 @@ export class Cards {
           </footer>
         </div>
         <div class="c-card u-highest">
-          <img class="o-image" src="http://via.placeholder.com/1024x963/3B6DC6/FFF" />
+          <img class="o-image" src="//source.unsplash.com/random" />
           <header class="c-card__header">
             <h2 class="c-heading">
               Heading <span class="c-heading__sub">Sub-heading</span>
@@ -210,7 +210,7 @@ export class Cards {
         </div>
         <h3 class="c-heading">Mega Card</h3>
         <div class="c-card u-highest">
-          <img class="o-image" src="http://via.placeholder.com/1024x963/3B6DC6/FFF" />
+          <img class="o-image" src="//source.unsplash.com/random" />
           <header class="c-card__header">
             <h2 class="c-heading">
               Heading
