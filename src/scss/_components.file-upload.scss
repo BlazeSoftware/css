@@ -8,8 +8,8 @@
     padding: var(--spacing-medium);
     line-height: 10;
     text-align: center;
-    background-color: var(--color-background);
-    border: 3px dashed var(--color-dark);
+    background: var(--file-upload-background);
+    border: var(--file-upload-border);
     border-radius: var(--border-radius);
   }
 

@@ -20,12 +20,12 @@ nav.c-pagination,
 }
 
 .c-pagination__control {
-  --button-color: var(--color-brand);
+  --button-color: var(--pagination-color);
 
   @include button;
   @include button-ghost;
 
   flex: 0 0 auto;
   min-width: 2.4em;
-  border-radius: var(--border-radius-rounded);
+  border-radius: var(--pagination-border-radius);
 }

@@ -1,6 +1,4 @@
 .c-alerts[role='presentation'] {
-  --alerts-background-color: var(--color-transparent);
-
   z-index: var(--z-over-page);
   display: block;
   max-height: 100%;
@@ -8,7 +6,6 @@
   padding: 0;
   overflow-y: auto;
   list-style: none;
-  background-color: var(--alerts-background-color);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -41,38 +38,59 @@
 }
 
 .c-alert[role='alert'] {
-  --alert-color: white;
-  --alert-background-color: var(--color-default);
-
   position: relative;
   margin: var(--spacing-medium);
   padding: var(--spacing-medium) var(--spacing-super) var(--spacing-medium) var(--spacing-medium);
   color: var(--alert-color);
-  background-color: var(--alert-background-color);
+  background: var(--alert-background);
   border-radius: var(--border-radius);
 
   .c-link {
-    color: var(--alert-color) !important;
+    color: var(--alert-link-color);
   }
 
   &.c-alert--brand {
-    --alert-background-color: var(--color-brand);
+    color: var(--alert-color--brand);
+    background: var(--alert-background--brand);
+
+    .c-link {
+      color: var(--alert-link-color--brand);
+    }
   }
 
   &.c-alert--info {
-    --alert-background-color: var(--color-info);
+    color: var(--alert-color--info);
+    background: var(--alert-background--info);
+
+    .c-link {
+      color: var(--alert-link-color--info);
+    }
   }
 
   &.c-alert--warning {
-    --alert-color: black;
-    --alert-background-color: var(--color-warning);
+    color: var(--alert-color--warning);
+    background: var(--alert-background--warning);
+
+    .c-link {
+      color: var(--alert-link-color--warning);
+    }
   }
 
   &.c-alert--success {
-    --alert-background-color: var(--color-success);
+    color: var(--alert-color--success);
+    background: var(--alert-background--success);
+
+    .c-link {
+      color: var(--alert-link-color--success);
+    }
   }
 
   &.c-alert--error {
-    --alert-background-color: var(--color-error);
+    color: var(--alert-color--error);
+    background: var(--alert-background--error);
+
+    .c-link {
+      color: var(--alert-link-color--error);
+    }
   }
 }

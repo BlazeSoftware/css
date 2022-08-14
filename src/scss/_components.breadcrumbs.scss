@@ -13,8 +13,8 @@
   &:not([aria-current]) {
     ::after {
       padding: 0 var(--spacing-small);
-      color: var(--color-default);
-      content: '/';
+      color: var(--breadcrumbs-divider-color);
+      content: var(--breadcrumbs-divider-character);
     }
   }
 

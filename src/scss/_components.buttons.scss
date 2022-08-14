@@ -1,14 +1,11 @@
 @import 'mixins/components.buttons';
 
 .c-button {
-  --button-color: #fff;
-  --button-background-color: var(--color-default);
-
   @include button;
 
   &.c-button--close {
     --button-color: inherit;
-    --button-background-color: transparent;
+    --button-background: transparent;
 
     @include button-color;
 
@@ -31,49 +28,59 @@
   }
 
   &.c-button--brand {
-    --button-background-color: var(--color-brand);
+    --button-color: var(--button-color--brand);
+    --button-background: var(--button-background--brand);
   }
 
   &.c-button--info {
-    --button-background-color: var(--color-info);
+    --button-color: var(--button-color--info);
+    --button-background: var(--button-background--info);
   }
 
   &.c-button--warning {
-    --button-color: #000;
-    --button-background-color: var(--color-warning);
+    --button-color: var(--button-color--warning);
+    --button-background: var(--button-background--warning);
   }
 
   &.c-button--success {
-    --button-background-color: var(--color-success);
+    --button-color: var(--button-color--success);
+    --button-background: var(--button-background--success);
   }
 
   &.c-button--error {
-    --button-background-color: var(--color-error);
+    --button-color: var(--button-color--error);
+    --button-background: var(--button-background--error);
   }
 
   &.c-button--ghost {
-    --button-color: var(--color-default);
+    --button-color: var(--button-color--ghost);
+    --button-background: var(--button-background--ghost);
 
     @include button-ghost;
 
     &.c-button--brand {
-      --button-color: var(--color-brand);
+      --button-color: var(--button-color--brand-ghost);
+      --button-background: var(--button-background--brand-ghost);
     }
 
     &.c-button--info {
-      --button-color: var(--color-info);
+      --button-color: var(--button-color--info-ghost);
+      --button-background: var(--button-background--info-ghost);
     }
 
     &.c-button--warning {
-      --button-color: var(--color-warning);
+      --button-color: var(--button-color--warning-ghost);
+      --button-background: var(--button-background--warning-ghost);
     }
 
     &.c-button--success {
-      --button-color: var(--color-success);
+      --button-color: var(--button-color--success-ghost);
+      --button-background: var(--button-background--success-ghost);
     }
 
     &.c-button--error {
-      --button-color: var(--color-error);
+      --button-color: var(--button-color--error-ghost);
+      --button-background: var(--button-background--error-ghost);
     }
   }
 

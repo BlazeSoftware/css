@@ -20,7 +20,7 @@
   &::before {
     display: inline-block;
     padding: 0 var(--spacing-small) 0 0;
-    color: var(--color-default);
+    color: var(--tree-item-color);
     transform-origin: 30% 50%;
     content: '–';
   }
@@ -32,12 +32,14 @@
 
 .c-tree__item[aria-expanded] {
   &::before {
+    color: var(--tree-item-expandable-color);
     content: '\276F';
   }
 }
 
 .c-tree__item[aria-expanded='true'] {
   &::before {
+    color: var(--tree-item-expanded-color);
     transform: rotate(90deg);
     content: '\276F';
   }

@@ -6,9 +6,9 @@
   display: block;
   width: 75%;
   overflow: hidden;
-  background-color: var(--color-background);
+  background: var(--modal-background);
   border: 0;
-  border-radius: var(--border-radius);
+  border-radius: var(--modal-border-radius);
   transform: translate(-50%, -50%);
   visibility: hidden;
   opacity: 0;
@@ -24,7 +24,7 @@
 
   &.o-modal--ghost {
     color: #fff;
-    background-color: var(--color-transparent);
+    background: var(--modal-background--ghost);
 
     .c-heading {
       color: #fff;

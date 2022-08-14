@@ -10,15 +10,15 @@
   max-width: 400px;
   padding: var(--spacing-medium);
   text-align: center;
-  background-color: var(--color-background);
+  background-color: var(--calendar-background);
   border: 1px solid transparent;
   border-radius: var(--border-radius);
 }
 
 .c-calendar__control,
 .c-calendar__date {
-  --button-color: var(--color-quiet);
-  --button-background-color: transparent;
+  --button-color: var(--calendar-control-color--date);
+  --button-background: var(--calendar-control-background--date);
 
   @include button-color;
   display: inline;
@@ -32,12 +32,14 @@
   user-select: none;
 
   &:hover {
-    border-color: var(--border-color);
+    --button-color: var(--calendar-control-color--hover);
+    --button-background: var(--calendar-control-background--hover);
   }
 }
 
 .c-calendar__control {
-  --button-color: var(--color-default);
+  --button-color: var(--calendar-control-color);
+  --button-background: var(--calendar-control-background);
 }
 
 .c-calendar__header {
@@ -58,7 +60,8 @@
 }
 
 .c-calendar__date--in-month {
-  --button-color: #000;
+  --button-color: var(--calendar-control-color--in-month);
+  --button-background: var(--calendar-control-background--in-month);
 }
 
 .c-calendar__date[aria-current='date'] {
@@ -67,7 +70,8 @@
 
 .c-calendar__date--selected[aria-selected='true'],
 .c-calendar__date--selected[aria-selected='true']:hover {
-  --button-color: #fff;
+  --button-color: var(--calendar-control-color--selected);
+  --button-background: var(--calendar-control-background--selected);
 
   @include button-color;
 

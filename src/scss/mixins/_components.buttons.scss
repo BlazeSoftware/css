@@ -2,7 +2,7 @@
 
 @mixin button-color {
   color: var(--button-color);
-  background-color: var(--button-background-color);
+  background: var(--button-background);
   border: 1px solid transparent;
 
   &.c-button--active {
@@ -28,13 +28,11 @@
 }
 
 @mixin button-ghost {
-  --button-background-color: transparent;
-
   border: 1px solid var(--button-color);
 
   &.c-button--active {
     color: #fff;
-    background-color: var(--button-color);
+    background: var(--button-color);
     border-color: 1px solid transparent;
   }
 
@@ -42,7 +40,7 @@
     &:not(:active) {
       &:hover {
         color: #fff;
-        background-color: var(--button-color);
+        background: var(--button-color);
         border-color: 1px solid transparent;
       }
     }
@@ -55,7 +53,7 @@
     &:active,
     &[aria-current] {
       color: #fff;
-      background-color: var(--button-color);
+      background: var(--button-color);
       border-color: 1px solid transparent;
     }
   }
@@ -105,7 +103,7 @@
 
   &:not(:disabled, [disabled]) {
     &:active {
-      background-color: transparent;
+      background: transparent;
     }
 
     &:not(:active) {
@@ -115,7 +113,7 @@
       }
 
       &:hover {
-        background-color: transparent;
+        background: transparent;
       }
     }
   }

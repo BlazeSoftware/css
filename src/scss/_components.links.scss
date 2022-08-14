@@ -3,8 +3,8 @@
 
 @mixin link--color {
   @include disabled;
-  color: var(--color-link);
-  background-color: transparent;
+  color: var(--link-color);
+  background: var(--link-background);
 
   &:not(:disabled) {
     &:visited {
@@ -12,12 +12,12 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: var(--link-background--hover);
       opacity: 0.9;
     }
 
     &:active {
-      background-color: transparent;
+      background-color: var(--link-background--hover);
       opacity: 0.8;
     }
   }
@@ -51,22 +51,32 @@ a.c-link,
   }
 
   &.c-link--brand {
-    --color-link: var(--color-brand);
+    --link-color: var(--link-color--brand);
+    --link-background: var(--link-background--brand);
+    --link-background--hover: var(--link-background--brand-hover);
   }
 
   &.c-link--info {
-    --color-link: var(--color-info);
+    --link-color: var(--link-color--info);
+    --link-background: var(--link-background--info);
+    --link-background--hover: var(--link-background--info-hover);
   }
 
   &.c-link--warning {
-    --color-link: var(--color-warning);
+    --link-color: var(--link-color--warning);
+    --link-background: var(--link-background--warning);
+    --link-background--hover: var(--link-background--warning-hover);
   }
 
   &.c-link--success {
-    --color-link: var(--color-success);
+    --link-color: var(--link-color--success);
+    --link-background: var(--link-background--success);
+    --link-background--hover: var(--link-background--success-hover);
   }
 
   &.c-link--error {
-    --color-link: var(--color-error);
+    --link-color: var(--link-color--error);
+    --link-background: var(--link-background--error);
+    --link-background--hover: var(--link-background--error-hover);
   }
 }

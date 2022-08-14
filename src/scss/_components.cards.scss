@@ -145,7 +145,7 @@
 
 .c-card__control {
   --button-color: var(--color-text);
-  --button-background-color: var(--color-dark);
+  --button-background: var(--color-dark);
   @include card-control;
 }
 
@@ -161,7 +161,7 @@
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 
   .c-card__control[role='menuitem'] {
-    --button-background-color: var(--color-light);
+    --button-background: var(--color-light);
   }
 }
 

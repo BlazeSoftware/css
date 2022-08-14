@@ -6,7 +6,7 @@ aside.o-drawer {
   overflow-x: hidden;
   overflow-y: auto;
   color: inherit;
-  background-color: var(--color-background);
+  background: var(--drawer-background);
   visibility: hidden;
   -webkit-overflow-scrolling: touch;
 
@@ -34,7 +34,7 @@ aside.o-drawer {
 
   &.o-drawer--bottom {
     top: 100%;
-    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border-radius: var(--drawer-border-radius) var(--drawer-border-radius) 0 0;
   }
 
   &.o-drawer--bottom.o-drawer--visible {
@@ -43,7 +43,7 @@ aside.o-drawer {
 
   &.o-drawer--top {
     bottom: 100%;
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-radius: 0 0 var(--drawer-border-radius) var(--drawer-border-radius);
   }
 
   &.o-drawer--top.o-drawer--visible {

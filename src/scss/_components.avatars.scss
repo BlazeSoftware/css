@@ -1,15 +1,11 @@
 .c-avatar {
-  --avatar-color: white;
-  --avatar-background-color: var(--color-brand);
-  --avatar-border-radius: var(--border-radius-rounded);
-
   position: relative;
   display: inline-block;
   width: 3em;
   height: 3em;
   margin: 0;
-  color: var(--avatar-color);
-  background-color: var(--avatar-background-color);
+  color: var(--avatar-color, white);
+  background: var(--avatar-background);
   border-radius: var(--avatar-border-radius);
 }
 
