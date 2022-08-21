@@ -50,12 +50,12 @@
     "@stencil/router": "1.0.1",
     "@stencil/sass": "1.5.2",
     "@types/cssnano": "5.1.0",
-    "cssnano": "5.1.12",
+    "cssnano": "5.1.13",
     "postcss": "8.4.16",
     "prettier": "2.7.1",
-    "stylelint": "14.9.1",
+    "stylelint": "14.11.0",
     "stylelint-config-rational-order": "0.1.2",
-    "stylelint-config-standard": "26.0.0",
+    "stylelint-config-standard": "27.0.0",
     "stylelint-config-standard-scss": "5.0.0",
     "stylelint-scss": "4.3.0"
   }
