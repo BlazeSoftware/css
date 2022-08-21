@@ -10,26 +10,25 @@ export class Buttonss {
         <h2 class="c-heading">Buttons</h2>
         <a class="c-button" href="#">
           Link
-        </a>
+        </a>{' '}
         <button class="c-button" type="button">
           Button
-        </button>
+        </button>{' '}
         <button class="c-button c-button--link" type="button">
           Link Button
-        </button>
+        </button>{' '}
         <button class="c-button" type="button">
           <i aria-hidden class="fas fa-car c-button__icon-left" />
           Button
-        </button>
+        </button>{' '}
         <button class="c-button" type="button">
           Button
           <i aria-hidden class="fas fa-shopping-cart c-button__icon-right" />
-        </button>
-        <input class="c-button" type="button" value="Input" />
-        <input class="c-button" type="submit" value="Submit" />
+        </button>{' '}
+        <input class="c-button" type="button" value="Input" /> <input class="c-button" type="submit" value="Submit" />{' '}
         <button disabled={true} class="c-button" type="button">
           Disabled button
-        </button>
+        </button>{' '}
         This is a{' '}
         <button class="c-button c-button--nude" type="button">
           nude button
@@ -297,19 +296,19 @@ export class Buttonss {
         <h3 class="c-heading">Button sizes</h3>
         <button class="c-button u-xsmall" type="button">
           xsmall
-        </button>
+        </button>{' '}
         <button class="c-button u-small" type="button">
           small
-        </button>
+        </button>{' '}
         <button class="c-button u-medium" type="button">
           medium
-        </button>
+        </button>{' '}
         <button class="c-button u-large" type="button">
           large
-        </button>
+        </button>{' '}
         <button class="c-button u-xlarge" type="button">
           xlarge
-        </button>
+        </button>{' '}
         <button class="c-button u-super" type="button">
           super
         </button>
@@ -317,78 +316,88 @@ export class Buttonss {
         <button class="c-button c-button--block u-xsmall" type="button">
           xsmall
         </button>
+        <br />
+        <br />
         <button class="c-button c-button--block u-small" type="button">
           small
         </button>
+        <br />
+        <br />
         <button class="c-button c-button--block u-medium" type="button">
           medium
         </button>
+        <br />
+        <br />
         <button class="c-button c-button--block u-large" type="button">
           large
         </button>
+        <br />
+        <br />
         <button class="c-button c-button--block u-xlarge" type="button">
           xlarge
         </button>
+        <br />
+        <br />
         <button class="c-button c-button--block u-super" type="button">
           super
         </button>
         <h3 class="c-heading">Colours</h3>
         <button class="c-button" type="button">
           Default
-        </button>
+        </button>{' '}
         <button class="c-button c-button--brand" type="button">
           Brand
-        </button>
+        </button>{' '}
         <button class="c-button c-button--info" type="button">
           Info
-        </button>
+        </button>{' '}
         <button class="c-button c-button--warning" type="button">
           Warning
-        </button>
+        </button>{' '}
         <button class="c-button c-button--success" type="button">
           Success
-        </button>
+        </button>{' '}
         <button class="c-button c-button--error" type="button">
           Error
-        </button>
+        </button>{' '}
         <h3 class="c-heading">Ghosts</h3>
         <button class="c-button c-button--ghost" type="button">
-          Ghost
-        </button>
+          Default
+        </button>{' '}
         <button class="c-button c-button--ghost c-button--brand" type="button">
           Brand
-        </button>
+        </button>{' '}
         <button class="c-button c-button--ghost c-button--info" type="button">
           Info
-        </button>
+        </button>{' '}
         <button class="c-button c-button--ghost c-button--warning" type="button">
           Warning
-        </button>
+        </button>{' '}
         <button class="c-button c-button--ghost c-button--success" type="button">
           Success
-        </button>
+        </button>{' '}
         <button class="c-button c-button--ghost c-button--error" type="button">
           Error
-        </button>
+        </button>{' '}
         <h3 class="c-heading">Rounded (and Ghosted)</h3>
         <button class="c-button c-button--rounded c-button--ghost c-button--brand u-xsmall" type="button">
           xsmall
-        </button>
+        </button>{' '}
         <button class="c-button c-button--rounded c-button--ghost c-button--info u-small" type="button">
           small
-        </button>
+        </button>{' '}
         <button class="c-button c-button--rounded c-button--ghost c-button--warning u-medium" type="button">
           medium
-        </button>
+        </button>{' '}
         <button class="c-button c-button--rounded c-button--ghost c-button--success u-large" type="button">
           large
-        </button>
+        </button>{' '}
         <button class="c-button c-button--rounded c-button--ghost c-button--error u-xlarge" type="button">
           xlarge
-        </button>
+        </button>{' '}
         <button class="c-button c-button--rounded c-button--ghost u-super" type="button">
           super
-        </button>
+        </button>{' '}
       </section>
     );
   }

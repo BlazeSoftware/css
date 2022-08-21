@@ -23,15 +23,395 @@
 
   --grid-gutter: 1em;
 
-  /* Colors */
+  /* Alerts */
+  --alert-color: var(--color-10);
+  --alert-background: var(--color-0);
 
-  --color-default: #74748c;
+  --alert-color--brand: var(--color-10);
+  --alert-background--brand: var(--color-brand);
+
+  --alert-color--info: var(--color-10);
+  --alert-background--info: var(--color-info);
+
+  --alert-color--warning: var(--color-0);
+  --alert-background--warning: var(--color-warning);
+
+  --alert-color--success: var(--color-10);
+  --alert-background--success: var(--color-success);
+
+  --alert-color--error: var(--color-10);
+  --alert-background--error: var(--color-error);
+
+  --alert-link-color: var(--alert-color);
+  --alert-link-color--brand: var(--alert-color--brand);
+  --alert-link-color--info: var(--alert-color--info);
+  --alert-link-color--warning: var(--alert-color--warning);
+  --alert-link-color--success: var(--alert-link-color--success);
+  --alert-link-color--error: var(--alert-color--error);
+
+  /* Avatars */
+  --avatar-color: var(--color-10);
+  --avatar-background: var(--color-brand);
+  --avatar-border-radius: var(--border-radius-rounded);
+
+  /* Badges */
+  --badge-color: var(--color-10);
+  --badge-color--ghost: var(--color-0);
+  --badge-background: var(--color-0);
+  --badge-border-color: transparent;
+  --badge-border-color--ghost: var(--badge-color--ghost);
+
+  --badge-color--brand: var(--color-10);
+  --badge-color--brand-ghost: var(--color-brand);
+  --badge-background--brand: var(--color-brand);
+  --badge-border-color--brand: transparent;
+  --badge-border-color--brand-ghost: var(--badge-color--brand-ghost);
+
+  --badge-color--info: var(--color-10);
+  --badge-color--info-ghost: var(--color-info);
+  --badge-background--info: var(--color-info);
+  --badge-border-color--info: transparent;
+  --badge-border-color--info-ghost: var(--badge-color--info-ghost);
+
+  --badge-color--warning: var(--color-0);
+  --badge-color--warning-ghost: var(--color-warning);
+  --badge-background--warning: var(--color-warning);
+  --badge-border-color--warning: transparent;
+  --badge-border-color--warning-ghost: var(--badge-color--warning-ghost);
+
+  --badge-color--success: var(--color-10);
+  --badge-color--success-ghost: var(--color-success);
+  --badge-background--success: var(--color-success);
+  --badge-border-color--success: black;
+  --badge-border-color--success-ghost: var(--badge-color--success-ghost);
+
+  --badge-color--error: var(--color-10);
+  --badge-color--error-ghost: var(--color-error);
+  --badge-background--error: var(--color-error);
+  --badge-border-color--error: transparent;
+  --badge-border-color--error-ghost: var(--badge-color--error-ghost);
+
+  /* Breadcrumbs */
+  --breadcrumbs-divider-color: var(--color-5);
+  --breadcrumbs-divider-character: '\2022';
+
+  /* Buttons */
+  --button-color: var(--color-10);
+  --button-color--ghost: var(--color-1);
+  --button-color--ghost-hover: var(--color-10);
+
+  --button-color--close: var(--color-0);
+
+  --button-background: var(--color-1);
+  --button-background--ghost: transparent;
+
+  --button-color--brand: var(--color-10);
+  --button-color--brand-ghost: var(--color-brand);
+  --button-color--brand-ghost-hover: var(--color-10);
+  --button-background--brand: var(--color-brand);
+  --button-background--brand-ghost: transparent;
+
+  --button-color--info: var(--color-10);
+  --button-color--info-ghost: var(--color-info);
+  --button-color--info-ghost-hover: var(--color-10);
+  --button-background--info: var(--color-info);
+  --button-background--info-ghost: transparent;
+
+  --button-color--warning: var(--color-0);
+  --button-color--warning-ghost: var(--color-warning);
+  --button-color--warning-ghost-hover: var(--color-0);
+  --button-background--warning: var(--color-warning);
+  --button-background--warning-ghost: transparent;
+
+  --button-color--success: var(--color-10);
+  --button-color--success-ghost: var(--color-success);
+  --button-color--success-ghost-hover: var(--color-10);
+  --button-background--success: var(--color-success);
+  --button-background--success-ghost: transparent;
+
+  --button-color--error: var(--color-10);
+  --button-color--error-ghost: var(--color-error);
+  --button-color--error-ghost-hover: var(--color-10);
+  --button-background--error: var(--color-error);
+  --button-background--error-ghost: transparent;
+
+  /* Calendars */
+  --calendar-background: var(--color-9);
+
+  --calendar-control-color: var(--color-0);
+  --calendar-control-background: transparent;
+
+  --calendar-control-color--date: var(--color-4);
+  --calendar-control-background--date: transparent;
+
+  --calendar-control-color--hover: var(--color-10);
+  --calendar-control-background--hover: var(--color-1);
+
+  --calendar-control-color--in-month: var(--color-0);
+  --calendar-control-background--in-month: var(--calendar-background);
+
+  --calendar-control-color--current: var(--calendar-control-color);
+  --calendar-control-background--current: var(--calendar-control-background);
+  --calendar-control-border-color--current: var(--color-3);
+
+  --calendar-control-color--selected: var(--color-0);
+  --calendar-control-background--selected: var(--color-7);
+  --calendar-control-border-color--selected: transparent;
+
+  /* Cards */
+  --card-background: var(--color-9);
+
+  --card-item-color: var(--color-text);
+  --card-item-background: transparent;
+
+  --card-item-color--divider: var(--color-0);
+  --card-item-background--divider: var(--color-8);
+
+  --card-item-color--brand: var(--color-10);
+  --card-item-background--brand: var(--color-brand);
+
+  --card-item-color--info: var(--color-10);
+  --card-item-background--info: var(--color-info);
+
+  --card-item-color--warning: var(--color-0);
+  --card-item-background--warning: var(--color-warning);
+
+  --card-item-color--success: var(--color-10);
+  --card-item-background--success: var(--color-success);
+
+  --card-item-color--error: var(--color-10);
+  --card-item-background--error: var(--color-error);
+
+  --card-control-color: var(--color-text);
+  --card-control-background: var(--color-8);
+
+  --card-control-color--menu: var(--color-text);
+  --card-control-background--menu: var(--color-10);
+
+  --card-menu-border: 1px solid var(--color-8);
+
+  /* Dividers */
+  --divider-color: var(--color-0);
+
+  /* File  Upload */
+  --file-upload-background: var(--color-8);
+  --file-upload-border: 2px dashed var(--color-5);
+
+  /* Hints */
+  --hint-color: var(--color-3);
+
+  /* Inputs */
+  --field-color: var(--color-text);
+  --field-background: var(--color-10);
+
+  --field-color--error: var(--field-color);
+  --field-border-color--error: var(--color-error);
+  --field-background--error: var(--color-10);
+
+  --field-color--success: var(--field-color);
+  --field-border-color--succes: var(--color-success);
+  --field-background--success: var(--color-10);
+
+  --field-border: var(--border-width) var(--border-style) var(--border-color);
+
+  /* Links */
+  --link-color: #4267ff;
+  --link-background: transparent;
+  --link-background--hover: transparent;
+
+  --link-color--brand: var(--color-brand);
+  --link-background--brand: transparent;
+  --link-background--brand-hover: transparent;
+
+  --link-color--info: var(--color-info);
+  --link-background--info: transparent;
+  --link-background--info-hover: transparent;
+
+  --link-color--warning: var(--color-warning);
+  --link-background--warning: transparent;
+  --link-background--warning-hover: transparent;
+
+  --link-color--success: var(--color-success);
+  --link-background--success: transparent;
+  --link-background--success-hover: transparent;
+
+  --link-color--error: var(--color-error);
+  --link-background--error: transparent;
+  --link-background--error-hover: transparent;
+
+  /* Pagination */
+  --pagination-color: var(--color-1);
+  --pagination-background: transparent;
+  --pagination-border-radius: var(--border-radius-rounded);
+
+  /* Progress */
+  --progress-border-radius: var(--border-radius);
+
+  --progress-bar-background: var(--color-2);
+  --progress-bar-color: var(--color-10);
+  --progress-background: var(--color-8);
+
+  --progress-bar-background--brand: var(--color-brand);
+  --progress-bar-color--brand: var(--color-10);
+  --progress-background--brand: var(--color-8);
+
+  --progress-bar-background--info: var(--color-info);
+  --progress-bar-color--info: var(--color-10);
+  --progress-background--info: var(--color-8);
+
+  --progress-bar-background--warning: var(--color-warning);
+  --progress-bar-color--warning: var(--color-0);
+  --progress-background--warning: var(--color-8);
+
+  --progress-bar-background--success: var(--color-success);
+  --progress-bar-color--success: var(--color-10);
+  --progress-background--success: var(--color-8);
+
+  --progress-bar-background--error: var(--color-error);
+  --progress-bar-color--error: var(--color-10);
+  --progress-background--error: var(--color-8);
+
+  /* Ranges */
+  --range-handle-background: var(--color-10);
+  --range-handle-box-shadow: 0 1px 3px 1px var(--color-3);
+  --range-handle-border-radius: var(--border-radius-rounded);
+
+  --range-track-color: var(--color-1);
+  --range-track-border-radius: var(--border-radius-rounded);
+
+  --range-track-color--brand: var(--color-brand);
+  --range-track-color--info: var(--color-info);
+  --range-track-color--warning: var(--color-warning);
+  --range-track-color--success: var(--color-success);
+  --range-track-color--error: var(--color-error);
+
+  /* Tables */
+  --table-caption-color: var(--color-3);
+  --table-striped-background: var(--color-8);
+  --table-heading-background: var(--color-7);
+
+  --table-row-color: var(--color-1);
+  --table-row-background: var(--color-10);
+
+  --table-row-color--clickable: var(--link-color);
+  --table-row-background--clickable: var(--color-9);
+
+  --table-row-color--disabled: var(--color-4);
+  --table-row-background--disabled: inherit;
+
+  --table-heading-border: var(--border-width) var(--border-style) var(--border-color);
+
+  /* Tabs */
+  --tab-heading-color: var(--color-text);
+  --tab-heading-background: var(--color-10);
+  --tab-heading-border-color: transparent;
+
+  --tab-heading-color--active: var(--color-text);
+  --tab-heading-background--active: var(--color-9);
+  --tab-heading-border-color--active: var(--color-2);
+
+  --tab-heading-color--hover: var(--color-text);
+  --tab-heading-background--hover: var(--color-9);
+  --tab-heading-border-color--hover: var(--color-2);
+
+  --tab-heading-color--brand: var(--color-text);
+  --tab-heading-background--brand: var(--color-9);
+  --tab-heading-border-color--brand: var(--color-brand);
+
+  --tab-heading-color--info: var(--color-text);
+  --tab-heading-background--info: var(--color-9);
+  --tab-heading-border-color--info: var(--color-info);
+
+  --tab-heading-color--warning: var(--color-text);
+  --tab-heading-background--warning: var(--color-9);
+  --tab-heading-border-color--warning: var(--color-warning);
+
+  --tab-heading-color--success: var(--color-text);
+  --tab-heading-background--success: var(--color-9);
+  --tab-heading-border-color--success: var(--color-success);
+
+  --tab-heading-color--error: var(--color-text);
+  --tab-heading-background--error: var(--color-9);
+  --tab-heading-border-color--error: var(--color-error);
+
+  --tab-heading-border-radius: var(--border-radius);
+
+  /* Timelines */
+  --timeline-item-color: var(--color-2);
+  --timeline-line-color: var(--color-6);
+  --timeline-spacing-color: var(--color-10);
+
+  --timeline-item-color--brand: var(--color-brand);
+  --timeline-item-color--info: var(--color-info);
+  --timeline-item-color--warning: var(--color-warning);
+  --timeline-item-color--success: var(--color-success);
+  --timeline-item-color--error: var(--color-error);
+
+  --timeline-item-color--loading: var(--timeline-item-color);
+
+  /* Toggles */
+  --toggle-track-color: var(--color-2);
+  --toggle-track-color--unchecked: var(--color-7);
+  --toggle-track-color--brand: var(--color-brand);
+  --toggle-track-color--info: var(--color-info);
+  --toggle-track-color--warning: var(--color-warning);
+  --toggle-track-color--success: var(--color-success);
+  --toggle-track-color--error: var(--color-error);
+  --toggle-track-border-radius: var(--border-radius-rounded);
+  --toggle-handle-background: var(--color-10);
+  --toggle-handle-border-radius: var(--border-radius-rounded);
+  --toggle-handle-box-shadow: 0 1px 3px 1px var(--color-3);
+
+  /* Tooltips */
+  --tooltip-color: var(--color-10);
+  --tooltip-background: var(--color-0);
+  --tooltip-border-radius: var(--border-radius);
+
+  /* Trees */
+  --tree-item-color: var(--color-0);
+  --tree-item-expandable-color: var(--color-5);
+  --tree-item-expanded-color: var(--color-0);
+
+  /* Drawers */
+  --drawer-background: var(--color-8);
+  --drawer-border-radius: var(--border-radius);
+
+  /* Modals */
+  --modal-background: var(--color-8);
+  --modal-background--ghost: transparent;
+  --modal-border-radius: var(--border-radius);
+
+  /* Typography */
+  --typography-code-color: var(--color-text);
+  --typography-code-background: var(--color-8);
+  --typography-code-border-color: var(--color-2);
+  --typography-code-border-radius: var(--border-radius);
+  --typography-help-border: 2px dashed var(--color-info);
+  --typography-highlight-color: var(--color-text);
+  --typography-highlight-background: var(--color-highlight);
+  --typography-quotation-border-color: var(--color-2);
+  --typography-quotation-border-color--brand: var(--color-brand);
+  --typography-quotation-border-color--info: var(--color-info);
+  --typography-quotation-border-color--warning: var(--color-warning);
+  --typography-quotation-border-color--success: var(--color-success);
+  --typography-quotation-border-color--error: var(--color-error);
+  --typography-quotation-footer-color: var(--color-quiet);
+
   --color-quiet: #a6a6bf;
-  --color-text: #000;
-  --color-dark: #eee;
-  --color-background: #f9f9f9;
-  --color-light: #fdfdfd;
-  --color-link: #4267ff;
+  --color-text: var(--color-0);
+
+  --color-0: #0f0f0f;
+  --color-1: #3a3a3a;
+  --color-2: #6a6a6a;
+  --color-3: #8a8a8a;
+  --color-4: #aaa;
+  --color-5: #bababa;
+  --color-6: #cacaca;
+  --color-7: #dadada;
+  --color-8: #eaeaea;
+  --color-9: #fafafa;
+  --color-10: #fff;
+
   --color-outline: #4267ff;
   --color-brand: #2c3e50;
   --color-info: #4267ff;
@@ -39,7 +419,7 @@
   --color-success: #088a05;
   --color-error: #ee0202;
   --color-highlight: #ffef14;
-  --color-disabled: var(--color-default);
+  --color-disabled: var(--color-4);
   --color-disabled-background: #f2f2f4;
   --color-transparent: transparent;
 
@@ -47,7 +427,7 @@
 
   --border-width: 1px;
   --border-style: solid;
-  --border-color: var(--color-default);
+  --border-color: var(--color-4);
   --border-radius: 4px;
   --border-radius-rounded: 30em;
 

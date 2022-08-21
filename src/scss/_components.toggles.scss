@@ -8,7 +8,7 @@
   user-select: none;
 
   input:not(:checked) + .c-toggle__track {
-    background-color: var(--color-dark);
+    background: var(--toggle-track-color--unchecked);
 
     .c-toggle__handle {
       transform: translateZ(0);
@@ -32,29 +32,29 @@
 
     .c-toggle__handle {
       border-color: var(--border-color-focus);
-      box-shadow: var(--box-shadow-focus), 0 1px 3px 1px var(--color-default);
+      box-shadow: var(--box-shadow-focus), var(--toggle-handle-box-shadow);
     }
   }
 }
 
 .c-toggle--brand .c-toggle__track {
-  --toggle-track-color: var(--color-brand);
+  --toggle-track-color: var(--toggle-track-color--brand);
 }
 
 .c-toggle--info .c-toggle__track {
-  --toggle-track-color: var(--color-info);
+  --toggle-track-color: var(--toggle-track-color--info);
 }
 
 .c-toggle--warning .c-toggle__track {
-  --toggle-track-color: var(--color-warning);
+  --toggle-track-color: var(--toggle-track-color--warning);
 }
 
 .c-toggle--success .c-toggle__track {
-  --toggle-track-color: var(--color-success);
+  --toggle-track-color: var(--toggle-track-color--success);
 }
 
 .c-toggle--error .c-toggle__track {
-  --toggle-track-color: var(--color-error);
+  --toggle-track-color: var(--toggle-track-color--error);
 }
 
 .c-toggle input {
@@ -63,8 +63,6 @@
 }
 
 .c-toggle__track {
-  --toggle-track-color: var(--color-default);
-
   @include grid__cell;
   @include grid__cell--width-fixed;
 
@@ -72,8 +70,8 @@
   width: 1em;
   height: 0.5em;
   margin: 0 0.5em;
-  background-color: var(--toggle-track-color);
-  border-radius: var(--border-radius-rounded);
+  background: var(--toggle-track-color);
+  border-radius: var(--toggle-track-border-radius);
 }
 
 .c-toggle__handle {
@@ -82,8 +80,8 @@
   left: 0;
   width: 1em;
   height: 1em;
-  background-color: #fff;
-  border-radius: var(--border-radius-rounded);
-  box-shadow: 0 1px 3px 1px var(--color-default);
+  background: var(--toggle-handle-background);
+  border-radius: var(--toggle-handle-border-radius);
+  box-shadow: var(--toggle-handle-box-shadow);
   transform: translateX(100%);
 }

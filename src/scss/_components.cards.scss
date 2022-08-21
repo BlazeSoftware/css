@@ -6,7 +6,7 @@
   margin: 0;
   padding: var(--spacing-small);
   color: var(--card-item-color);
-  background-color: var(--card-item-background-color);
+  background: var(--card-item-background);
 
   @include disabled;
 }
@@ -39,7 +39,7 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
-  background-color: var(--color-background);
+  background: var(--card-background);
   border-radius: var(--border-radius);
 
   > .o-image:not(:first-child) {
@@ -88,40 +88,37 @@
 }
 
 .c-card__item {
-  --card-item-color: var(--color-text);
-  --card-item-background-color: transparent;
-
   @include card-item;
 
   &--divider[role='separator'] {
-    --card-item-color: #000;
-    --card-item-background-color: var(--color-dark);
+    --card-item-color: var(--card-item-color--divider);
+    --card-item-background: var(--card-item-background--divider);
     font-weight: var(--text-font-weight-heavy);
   }
 
   &--brand {
-    --card-item-color: #fff;
-    --card-item-background-color: var(--color-brand);
+    --card-item-color: var(--card-item-color--brand);
+    --card-item-background: var(--card-item-background--brand);
   }
 
   &--info {
-    --card-item-color: #fff;
-    --card-item-background-color: var(--color-info);
+    --card-item-color: var(--card-item-color--info);
+    --card-item-background: var(--card-item-background--info);
   }
 
   &--warning {
-    --card-item-color: #000;
-    --card-item-background-color: var(--color-warning);
+    --card-item-color: var(--card-item-color--warning);
+    --card-item-background: var(--card-item-background--warning);
   }
 
   &--success {
-    --card-item-color: #fff;
-    --card-item-background-color: var(--color-success);
+    --card-item-color: var(--card-item-color--success);
+    --card-item-background: var(--card-item-background--success);
   }
 
   &--error {
-    --card-item-color: #fff;
-    --card-item-background-color: var(--color-error);
+    --card-item-color: var(--card-item-color--error);
+    --card-item-background: var(--card-item-background--error);
   }
 }
 
@@ -144,24 +141,26 @@
 }
 
 .c-card__control {
-  --button-color: var(--color-text);
-  --button-background: var(--color-dark);
+  --button-color: var(--card-control-color);
+  --button-background: var(--card-control-background);
   @include card-control;
 }
 
 .c-card--menu[role='menu'] {
   position: absolute;
-  width: 100%;
+  display: inline-block;
+  width: auto;
   max-height: 300px;
   margin-top: 0.5em;
   overflow-x: hidden;
   overflow-y: auto;
   text-overflow: ellipsis;
-  border: 1px solid var(--color-dark);
+  border: var(--card-menu-border);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
 
   .c-card__control[role='menuitem'] {
-    --button-background: var(--color-light);
+    --button-color: var(--card-control-color--menu);
+    --button-background: var(--card-control-background--menu);
   }
 }
 

@@ -25,7 +25,7 @@ export class Typography {
         </p>
         <p class="u-paragraph">
           If you ever need to <span class="u-text--highlight">highlight some text</span> wrap the highlight class around
-          it, and
+          it, and{' '}
           <span class="u-text--quiet">
             if you want to speak quietly use the <span class="u-text--quiet">quite class</span>
           </span>
@@ -36,7 +36,7 @@ export class Typography {
           is awesome?! <span class="u-text--loud">We think so!</span>
         </p>
         <p class="u-paragraph">
-          Make a button
+          Make a button{' '}
           <button class="c-button c-button--nude" type="button">
             nude
           </button>{' '}
@@ -92,8 +92,9 @@ export class Typography {
           Need to write some code? You can <span class="u-code">console.log('write it inline');</span> or if you want:
         </p>
         <div class="u-code u-code--multiline">
-          {`(demo = () => {alert('you can write code on multiple lines!')}
-            )()`}
+          {`(demo = () => {
+  alert('you can write code on multiple lines!');
+})()`}
         </div>
         <p class="u-paragraph">
           To format your code press <span class="u-kbd">ctrl + alt + l</span>

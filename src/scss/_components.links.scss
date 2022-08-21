@@ -12,12 +12,12 @@
     }
 
     &:hover {
-      background-color: var(--link-background--hover);
+      background: var(--link-background--hover);
       opacity: 0.9;
     }
 
     &:active {
-      background-color: var(--link-background--hover);
+      background: var(--link-background--hover);
       opacity: 0.8;
     }
   }

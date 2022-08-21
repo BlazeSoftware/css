@@ -49,7 +49,9 @@ export class Calendar {
           <button class="c-calendar__date c-calendar__date--in-month">15</button>
           <button class="c-calendar__date c-calendar__date--in-month">16</button>
           <button class="c-calendar__date c-calendar__date--in-month">17</button>
-          <button class="c-calendar__date c-calendar__date--in-month">18</button>
+          <button class="c-calendar__date c-calendar__date--in-month" aria-current="date">
+            18
+          </button>
           <button class="c-calendar__date c-calendar__date--in-month">19</button>
           <button class="c-calendar__date c-calendar__date--in-month">20</button>
           <button class="c-calendar__date c-calendar__date--in-month">21</button>

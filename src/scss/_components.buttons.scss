@@ -4,7 +4,7 @@
   @include button;
 
   &.c-button--close {
-    --button-color: inherit;
+    --button-color: var(--button-color--close);
     --button-background: transparent;
 
     @include button-color;
@@ -61,26 +61,31 @@
     &.c-button--brand {
       --button-color: var(--button-color--brand-ghost);
       --button-background: var(--button-background--brand-ghost);
+      --button-color--ghost-hover: var(--button-color--brand-ghost-hover);
     }
 
     &.c-button--info {
       --button-color: var(--button-color--info-ghost);
       --button-background: var(--button-background--info-ghost);
+      --button-color--ghost-hover: var(--button-color--info-ghost-hover);
     }
 
     &.c-button--warning {
       --button-color: var(--button-color--warning-ghost);
       --button-background: var(--button-background--warning-ghost);
+      --button-color--ghost-hover: var(--button-color--warning-ghost-hover);
     }
 
     &.c-button--success {
       --button-color: var(--button-color--success-ghost);
       --button-background: var(--button-background--success-ghost);
+      --button-color--ghost-hover: var(--button-color--success-ghost-hover);
     }
 
     &.c-button--error {
       --button-color: var(--button-color--error-ghost);
       --button-background: var(--button-background--error-ghost);
+      --button-color--ghost-hover: var(--button-color--error-ghost-hover);
     }
   }
 

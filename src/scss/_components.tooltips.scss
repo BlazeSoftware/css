@@ -17,12 +17,12 @@
   &::after {
     position: absolute;
     padding: 0.25em 0.5em;
-    color: #fff;
+    color: var(--tooltip-color);
     line-height: 1.45;
     white-space: nowrap;
-    background-color: #000;
-    border: 1px solid #000;
-    border-radius: var(--border-radius);
+    background: var(--tooltip-background);
+    border: 1px solid var(--tooltip-background);
+    border-radius: var(--tooltip-border-radius);
     visibility: hidden;
     content: attr(aria-label);
   }
@@ -37,7 +37,7 @@
   &::before {
     top: 0%;
     left: 50%;
-    border-top-color: #000;
+    border-top-color: var(--tooltip-background);
     transform: translate(-50%, -1em);
   }
 
@@ -52,7 +52,7 @@
   &::before {
     top: 50%;
     left: 100%;
-    border-right-color: #000;
+    border-right-color: var(--tooltip-background);
     transform: translate(0, -50%);
   }
 
@@ -67,7 +67,7 @@
   &::before {
     bottom: 0;
     left: 50%;
-    border-bottom-color: #000;
+    border-bottom-color: var(--tooltip-background);
     transform: translate(-50%, 1em);
   }
 
@@ -82,7 +82,7 @@
   &::before {
     top: 50%;
     right: 100%;
-    border-left-color: #000;
+    border-left-color: var(--tooltip-background);
     transform: translate(0, -50%);
   }
 

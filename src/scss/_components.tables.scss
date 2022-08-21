@@ -16,7 +16,7 @@
   @include grid__cell--full;
   max-width: 100%;
   padding: var(--spacing-small) 0;
-  color: var(--color-default);
+  color: var(--table-caption-color);
   font-size: var(--text-font-size-small);
   text-align: left;
 }
@@ -32,7 +32,7 @@
 
 .c-table--striped :not(.c-table__row--heading).c-table__row:nth-of-type(odd) {
   color: initial;
-  background-color: var(--color-background);
+  background: var(--table-striped-background);
 }
 
 .c-table__cell {
@@ -49,31 +49,31 @@
   color: inherit;
   font-weight: var(--text-font-weight-heavy);
   font-size: var(--text-font-size-medium);
-  background-color: var(--color-background);
+  background: var(--table-heading-background);
 }
 
 .c-table--striped .c-table__row--heading .c-table__cell {
-  color: initial;
-  background-color: #fff;
-  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+  color: var(--table-row-color);
+  background: var(--table-row-background);
+  border-bottom: var(--table-heading-border);
 }
 
 .c-table--clickable :not(.c-table__row--heading).c-table__row:hover .c-table__cell,
 .c-table__row--clickable:hover .c-table__cell {
-  color: var(--link-color);
-  background-color: initial;
+  color: var(--table-row-color--clickable);
+  background: var(--table-row-background--clickable);
 }
 
-.c-table__row--disabled {
-  color: var(--color-disabled);
-  background-color: initial;
+.c-table__row--disabled .c-table__cell {
+  color: var(--table-row-color--disabled);
+  background: var(--table-row-background--disabled);
   cursor: default;
 }
 
 .c-table--clickable :not(.c-table__row--heading).c-table__row--disabled:hover .c-table__cell,
 .c-table__row--disabled:hover .c-table__cell {
-  color: var(--color-disabled);
-  background-color: initial;
+  color: var(--table-row-color--disabled);
+  background: var(--table-row-background--disabled);
   cursor: not-allowed;
 }
 

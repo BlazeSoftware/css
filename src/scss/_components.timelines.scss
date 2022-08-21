@@ -3,8 +3,6 @@
   padding: 0;
 
   .c-timeline-item {
-    --timeline-item-color: var(--color-default);
-
     position: relative;
     padding: 0 0 1.5em;
     list-style: none;
@@ -15,7 +13,7 @@
       left: 0.25em;
       height: 100%;
       margin-left: -1px;
-      border-left: 1px solid var(--color-default);
+      border-left: 1px solid var(--timeline-line-color);
       content: '';
     }
 
@@ -32,7 +30,7 @@
       height: 0.5em;
       background-color: var(--timeline-item-color);
       border-radius: 100%;
-      box-shadow: 0 0 0 4px #fff;
+      box-shadow: 0 0 0 4px var(--timeline-spacing-color);
       content: '';
     }
 
@@ -43,27 +41,27 @@
     }
 
     &.c-timeline-item--brand::after {
-      --timeline-item-color: var(--color-brand);
+      --timeline-item-color: var(--timeline-item-color--brand);
       content: '';
     }
 
     &.c-timeline-item--info::after {
-      --timeline-item-color: var(--color-info);
+      --timeline-item-color: var(--timeline-item-color--info);
       content: '';
     }
 
     &.c-timeline-item--warning::after {
-      --timeline-item-color: var(--color-warning);
+      --timeline-item-color: var(--timeline-item-color--warning);
       content: '';
     }
 
     &.c-timeline-item--success::after {
-      --timeline-item-color: var(--color-success);
+      --timeline-item-color: var(--timeline-item-color--success);
       content: '';
     }
 
     &.c-timeline-item--error::after {
-      --timeline-item-color: var(--color-error);
+      --timeline-item-color: var(--timeline-item-color--error);
       content: '';
     }
   }
@@ -101,12 +99,12 @@
 
     .c-timeline-item--loading::after {
       background-color: transparent;
-      border: 2px solid var(--color-default);
+      border: 2px solid var(--timeline-item-color--loading);
     }
 
     .c-timeline-item--loading {
       .c-timeline-item__body {
-        color: var(--color-text);
+        opacity: var(--disabled-opacity);
       }
     }
   }

@@ -64,10 +64,10 @@
   width: 100%;
   margin: 0;
   padding: var(--spacing-small);
+  color: var(--field-color);
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size-medium);
   font-family: inherit;
-  color: var(--field-color);
   background: var(--field-background);
   border: var(--field-border);
   border-radius: var(--border-radius);
@@ -110,18 +110,18 @@ select.c-field:not([multiple]) {
 
 .c-field--error {
   color: var(--field-color--error);
+  background: var(--field-background--error);
   border-color: var(--field-border-color--error);
-  background: var(--field-background--error)
 }
 
 .c-field--success {
   color: var(--field-color--success);
+  background: var(--field-background--success);
   border-color: var(--field-border-color--succes);
-  background: var(--field-background--success)
 }
 
 .c-field--choice {
-  background-color: transparent;
+  background: transparent;
   border: 0;
   border-radius: 0;
 

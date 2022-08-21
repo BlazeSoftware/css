@@ -21,6 +21,7 @@ nav.c-pagination,
 
 .c-pagination__control {
   --button-color: var(--pagination-color);
+  --button-background: var(--pagination-background);
 
   @include button;
   @include button-ghost;

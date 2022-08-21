@@ -31,7 +31,7 @@
   border: 1px solid var(--button-color);
 
   &.c-button--active {
-    color: #fff;
+    color: var(--button-color--ghost-hover);
     background: var(--button-color);
     border-color: 1px solid transparent;
   }
@@ -39,7 +39,7 @@
   &:not(:disabled, [disabled]) {
     &:not(:active) {
       &:hover {
-        color: #fff;
+        color: var(--button-color--ghost-hover);
         background: var(--button-color);
         border-color: 1px solid transparent;
       }
@@ -52,7 +52,7 @@
 
     &:active,
     &[aria-current] {
-      color: #fff;
+      color: var(--button-color--ghost-hover);
       background: var(--button-color);
       border-color: 1px solid transparent;
     }
@@ -102,18 +102,10 @@
   appearance: none;
 
   &:not(:disabled, [disabled]) {
-    &:active {
-      background: transparent;
-    }
-
     &:not(:active) {
       &:focus {
         border-color: var(--border-color-focus);
         box-shadow: var(--box-shadow-focus);
-      }
-
-      &:hover {
-        background: transparent;
       }
     }
   }

@@ -10,7 +10,7 @@
   max-width: 400px;
   padding: var(--spacing-medium);
   text-align: center;
-  background-color: var(--calendar-background);
+  background: var(--calendar-background);
   border: 1px solid transparent;
   border-radius: var(--border-radius);
 }
@@ -32,8 +32,8 @@
   user-select: none;
 
   &:hover {
-    --button-color: var(--calendar-control-color--hover);
-    --button-background: var(--calendar-control-background--hover);
+    --button-color: var(--calendar-control-color--hover) !important;
+    --button-background: var(--calendar-control-background--hover) !important;
   }
 }
 
@@ -65,17 +65,17 @@
 }
 
 .c-calendar__date[aria-current='date'] {
-  border-color: var(--border-color);
+  --button-color: var(--calendar-control-color--current);
+  --button-background: var(--calendar-control-background--current);
+
+  border-color: var(--calendar-control-border-color--current);
 }
 
-.c-calendar__date--selected[aria-selected='true'],
-.c-calendar__date--selected[aria-selected='true']:hover {
+.c-calendar__date--selected[aria-selected='true'] {
   --button-color: var(--calendar-control-color--selected);
   --button-background: var(--calendar-control-background--selected);
 
-  @include button-color;
-
-  border-color: transparent;
+  border-color: var(--calendar-control-border-color--selected);
 }
 
 .c-calendar__footer {
