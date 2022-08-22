@@ -16,12 +16,12 @@
   }
 
   input:disabled + .c-toggle__track {
-    cursor: not-allowed;
     background: var(--color-disabled-background);
+    cursor: not-allowed;
 
     .c-toggle__handle {
-      cursor: not-allowed;
       background: var(--color-disabled-background);
+      cursor: not-allowed;
     }
   }
 
