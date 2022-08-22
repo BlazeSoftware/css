@@ -17,11 +17,11 @@
 
   input:disabled + .c-toggle__track {
     cursor: not-allowed;
-    opacity: var(--disabled-opacity);
+    background: var(--color-disabled-background);
 
     .c-toggle__handle {
       cursor: not-allowed;
-      opacity: var(--disabled-opacity);
+      background: var(--color-disabled-background);
     }
   }
 

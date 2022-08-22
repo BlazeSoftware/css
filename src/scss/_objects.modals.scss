@@ -29,6 +29,10 @@
     .c-heading {
       color: #fff;
     }
+
+    .c-button--close {
+      color: var(--modal-close-color--ghost);
+    }
   }
 
   &.o-modal--full {
@@ -67,4 +71,5 @@
 
 .c-button--close {
   top: var(--spacing-small);
+  color: var(--modal-close-color);
 }

@@ -16,8 +16,6 @@ export namespace Components {
     }
     interface DemoBadges {
     }
-    interface DemoBreadcrumbs {
-    }
     interface DemoButtons {
     }
     interface DemoCalendars {
@@ -103,12 +101,6 @@ declare global {
     var HTMLDemoBadgesElement: {
         prototype: HTMLDemoBadgesElement;
         new (): HTMLDemoBadgesElement;
-    };
-    interface HTMLDemoBreadcrumbsElement extends Components.DemoBreadcrumbs, HTMLStencilElement {
-    }
-    var HTMLDemoBreadcrumbsElement: {
-        prototype: HTMLDemoBreadcrumbsElement;
-        new (): HTMLDemoBreadcrumbsElement;
     };
     interface HTMLDemoButtonsElement extends Components.DemoButtons, HTMLStencilElement {
     }
@@ -278,7 +270,6 @@ declare global {
         "demo-avatars": HTMLDemoAvatarsElement;
         "demo-back-to-top": HTMLDemoBackToTopElement;
         "demo-badges": HTMLDemoBadgesElement;
-        "demo-breadcrumbs": HTMLDemoBreadcrumbsElement;
         "demo-buttons": HTMLDemoButtonsElement;
         "demo-calendars": HTMLDemoCalendarsElement;
         "demo-cards": HTMLDemoCardsElement;
@@ -318,8 +309,6 @@ declare namespace LocalJSX {
     interface DemoBackToTop {
     }
     interface DemoBadges {
-    }
-    interface DemoBreadcrumbs {
     }
     interface DemoButtons {
     }
@@ -381,7 +370,6 @@ declare namespace LocalJSX {
         "demo-avatars": DemoAvatars;
         "demo-back-to-top": DemoBackToTop;
         "demo-badges": DemoBadges;
-        "demo-breadcrumbs": DemoBreadcrumbs;
         "demo-buttons": DemoButtons;
         "demo-calendars": DemoCalendars;
         "demo-cards": DemoCards;
@@ -420,7 +408,6 @@ declare module "@stencil/core" {
             "demo-avatars": LocalJSX.DemoAvatars & JSXBase.HTMLAttributes<HTMLDemoAvatarsElement>;
             "demo-back-to-top": LocalJSX.DemoBackToTop & JSXBase.HTMLAttributes<HTMLDemoBackToTopElement>;
             "demo-badges": LocalJSX.DemoBadges & JSXBase.HTMLAttributes<HTMLDemoBadgesElement>;
-            "demo-breadcrumbs": LocalJSX.DemoBreadcrumbs & JSXBase.HTMLAttributes<HTMLDemoBreadcrumbsElement>;
             "demo-buttons": LocalJSX.DemoButtons & JSXBase.HTMLAttributes<HTMLDemoButtonsElement>;
             "demo-calendars": LocalJSX.DemoCalendars & JSXBase.HTMLAttributes<HTMLDemoCalendarsElement>;
             "demo-cards": LocalJSX.DemoCards & JSXBase.HTMLAttributes<HTMLDemoCardsElement>;

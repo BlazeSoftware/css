@@ -14,7 +14,6 @@ export class Site {
           <demo-typography />
           <demo-headings />
           <demo-gradient-text />
-          <demo-breadcrumbs />
           <demo-lists />
           <demo-tables />
           <demo-images />
