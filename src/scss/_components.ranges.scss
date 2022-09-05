@@ -50,9 +50,9 @@
 .c-range[type='range'] {
   width: 100%;
   padding: var(--spacing-small) 0;
+  background: transparent;
   outline: 0;
   appearance: none;
-  background: transparent;
 
   &.c-range--brand {
     --range-track-color: var(--range-track-color--brand);
