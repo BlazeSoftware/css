@@ -52,6 +52,7 @@
   padding: var(--spacing-small) 0;
   outline: 0;
   appearance: none;
+  background: transparent;
 
   &.c-range--brand {
     --range-track-color: var(--range-track-color--brand);

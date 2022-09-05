@@ -31,7 +31,7 @@
 }
 
 .c-table--striped :not(.c-table__row--heading).c-table__row:nth-of-type(odd) {
-  color: initial;
+  color: inherit;
   background: var(--table-striped-background);
 }
 
@@ -50,11 +50,6 @@
   font-weight: var(--text-font-weight-heavy);
   font-size: var(--text-font-size-medium);
   background: var(--table-heading-background);
-}
-
-.c-table--striped .c-table__row--heading .c-table__cell {
-  color: var(--table-row-color);
-  background: var(--table-row-background);
   border-bottom: var(--table-heading-border);
 }
 

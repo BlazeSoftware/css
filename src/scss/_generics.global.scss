@@ -4,6 +4,7 @@ html,
   box-sizing: border-box;
   line-height: 1.15;
   text-size-adjust: 100%;
+  background: var(--color-background);
 }
 
 *,
@@ -14,4 +15,5 @@ html,
 
 body {
   margin: 0;
+  background: var(--color-background);
 }
